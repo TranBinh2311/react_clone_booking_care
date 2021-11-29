@@ -1,0 +1,185 @@
+.section-share {
+    padding: 20px 0px;
+    height: 330px;
+    // background : #f5f5f5;
+    // border: 1px solid red;
+    &.section_speciality{
+        background: #f5f5f5 ;
+    }
+    &.section_medical-facility{
+        background: #f5f5f5 ;
+    }
+    &.section_outstanding-doctor{
+        background: #f5f5f5 ;
+    }
+    &.section_about{
+        margin: 0 100px;
+        height: 450px;
+        .section-about__content{
+            
+            display: flex;
+            justify-content: space-between;
+            .section-about__content-left{
+                width: 50%;
+                .section-about__content-left--header{
+                    
+                    padding-bottom: 10px;
+                    font-size: 24px;
+                    font-weight: 1000;
+                }
+            }
+
+            .section-about__content-right{
+                text-align: center;
+                width: 50%;
+                padding:  46px 20px;
+                .section-about__content-right--content{
+                    
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    .section__content-slider{
+        .section__content-item{
+
+            .section__content-item--img{
+                    cursor: pointer;
+                    height: 150px;
+                    width: 278px;
+                   
+                    background-color: #eee;
+                    background-size: cover;
+                    background-repeat: none;
+                    background-position: center center;
+                    &.section_medical-facility{
+                        background-image: url('../../assets/images/medical_facility/benh-vien-thu-cuc-1.jpeg');
+                    }
+                    &.section_speciality{
+                        background-image: url('../../assets/images/specialty/co-xuong-khop.jpeg');
+                    }
+                    &.section_outstanding-doctor{
+                        background-image: url('../../assets/images/outstanding_doctor/doctor.png');
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        height: 120px;
+                        width: 120px;
+                    }
+                    &.section_handbook{
+                        background-image: url('../../assets/images/handbook/nho-rang-khon.jpeg');
+                    }
+                }
+            .section__content-item--title{
+                    padding: 10px 0px;
+                    cursor: pointer;
+                    text-align: center;
+                    &:hover{
+                        color: rgb(32, 188, 194);
+                    }
+                }
+            }
+        } 
+    }
+
+.section-share{
+    .section__container{
+        margin:  0 100px;
+        display: flex;
+        flex-direction: column;
+        .section__content-header{
+            display: flex;
+            justify-content: space-between;
+
+            .section__content-header--left{
+                padding: 20px 0px;
+                font-size: 24px;
+                font-weight: 1000;
+            }
+            .section__content-header--right{
+                text-align: center;
+                font-size: 12px;
+                line-height: 40px;
+                height: 40px;
+                padding: auto;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-weight: 100;
+                &:hover{
+                    background-color: yellow;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+}
+
+
+.section_outstanding-doctor{
+    .section__content-item--outner{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+.home-footer__container{
+    text-align: center;
+    padding-top: 8px;
+    background:  rgb(43, 196, 223);
+    color : #fff;
+    border: 1px solid transparent;
+    margin-bottom: 0px ;
+    .home-footer__container-info{
+        color: rgb(94, 92, 235);
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+
+//reset  slick slider css
+
+.slick-prev:before , .slick-next:before{
+    font-family: Glyphicons Halflings !important;
+    color: red !important;
+    // content: '\e257' !important;
+}
+.slick-prev{
+    border: 1px solid green !important;
+    // position: relative !important;
+    z-index: 1 !important;
+    left: -10px !important;
+    height: 48px !important;
+    width: 44px !important;
+    background : #fff !important;
+    border: 2px solid #d7d7d7 !important;
+
+    &:hover{
+        background: #d7d7d7 !important;
+    }
+
+}
+
+.slick-next{
+    border: 1px solid green !important;
+    // position: relative !important;
+    z-index: 1 !important;
+    right: -10px !important;
+    height: 48px !important;
+    width: 44px !important;
+    background : #fff !important;
+    border: 2px solid #d7d7d7 !important;
+
+    &:hover{
+        background: #d7d7d7 !important;
+    }
+}
+
+
